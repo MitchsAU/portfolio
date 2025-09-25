@@ -1,0 +1,404 @@
+Canberra Modern
+After the Canberra Modern visitors gave their brief about the website and what they expected I shorty began development on the website. I began buy creating all the html pages I needed and setting up all the appropriate tags and sections using semantic HTML tags where possible. My CSS code is organized into the groups and pages relevant to each other, making it easier to find and edit classes without getting lost or not knowing what I am editing. Mostly I think that my website turned out really nice. Having only little hiccups along the way which were solved with the help of some JavaScript I was able to create a seamless website design that used the main 2 colors from the CM logo. These colors were incorporated accordingly on buttons and hover affects to add some vibrance to the site. I used CSS grid to make my responsive header which turned out perfectly, the header accordingly adjusts to different sizes through media queries and once too small to show the links up top it transforms into a hamburger menu that has a seamless transition when clicked. My website is very responsive in all aspects around the website, I have tested the responsiveness all the way down to the tiny iPhone SE with it working close to perfectly. The main responsive part of the website was using CSS grids a lot, when the screen gets too small to handle a certain amount of grids I would take out a fractional unit reducing it by 1 until only 1 fractional unit is left at the smallest screen size.
+I planned out all of my pages before development with Low-fidelity wireframes so I could have a visual representation to work off of. This greatly helped my development process as I was able to refer back to the wireframes over and over to complete my designs with improvisations along the way. My index page was kept pretty much the exact same apart from adding a call to action button below the first paragraph as well as the background behind the hero content. I added this background so that the top of the page had a seamless flow into the content below. The title below acts as a hook for the user to scroll down and read the rest of the page. This leads them to the about section which has been combined with the index page as it is unnecessary to have a separate page for this section. I kept the events page the exact same apart from adding buttons below each paragraph so the user can book the event. The partners page was also pretty straight forward and didn’t need to be adjusted from the wireframe. The gallery page had a slight modification as instead of having 3 rows I added a 4th as on larger screens such as my 2k monitor a 4th row could be easily implemented. These rows adjust accordingly to peoples screen sizes. Lastly the Canberra’s Modern (CM) page had a slightly different layout than the rest of the pages. So far all of my pages had been aligned with the image on the top and so I wanted to add some variety by adding the image to the side instead. The wireframe is implemented in the final website exactly as
+planned except when scaling down to smaller screens the images end up being on the top instead of to the side for readability purposes.
+I overall really enjoyed working on this assignment as I thought that having a responsive website would be more complicated than it actually is. In previous assignments I struggled with sizing and getting it to respond but now I know exactly what to do thanks to CSS grids and media queries. Going forward, including responsive features will be a walk in the park given what I have learnt throughout this assignment.
+Kinoko Restaurant and Bar Website
+# Project 2 Mitchell Skelton u3236482 Front-End Web Design 11056
+## Reflection
+Already knowing one of the best AI assistants ChatGPT I didn’t have to do much research into finding out about it. I did some brainstorming on what website I was going to design and landed on designing for a Japanese Restaurant. After this I began by creating the html page I was going to use and setting up all the other CSS and JavaScript files needed for this project. Initially I generated my code through ChatGPT where I gave it some prompts to create the website based off. The prompts are as follows:
+1. Code a website using a dark colour scheme for a Japanese sushi restaurant, include a big hero content with text of the restaurant name and an image. Please also make a card like system where the menu items are displayed on each card, this card system should be displayed in rows of 3 using HTML, CSS and bootstrap.
+2. Please make the background black and have the card border as a glowing white 2px.
+3. Please make it so the cards do not come within 10% of the edge of the screen.
+### ChatGPT Initial Generation
+![ChatGPT Initial Generation](./assets/images/chatgpt.PNG)
+After this initial generation from ChatGPT I started to work on the website coding myself. I started to add in a navigation bar above what ChatGPT generated and properly styled the generated code to my liking. I sourced an image for the hero content and applied it
+to a grid system where the title of the restaurant was on the left and the image was on the right. I then started to work on the menu that ChatGPT generated using bootstrap for me which was pretty helpful. I tweaked ChatGPTs code to get rid of the initial white glowing border as I didn’t like it anymore and instead had the border appear on hover. After finishing with ChatGPTs initial code I started to implement my own additions after having some ideas. I added an about section where the user can read about the restaurant which was generated by ChatGPT.
+I added in some pictures of food items that the restaurant could possibly be selling as a banner type display beneath the about section. I initially wanted to code the titles of “Sushi”, “Sashimi”, “Hosomaki” and “Udon” on top of the images but couldn’t manage to properly figure it out as some weird issues would appear (I have done this before with no issues). Instead, I photoshopped the words on and reimported the images back onto the website which was a quick solution (not the preferred method). I applied a hover effect to these 4 images so the user knows that they are clickable. Here bootstrap was rough to get my head around but eventually got the result I wanted with the 4-grid display. Considering this is only a simple experimental website I didn’t create any extra pages for those sections. I also only created this website on a single html file as to keep it 1 page (simple). The navigation bar links are anchored to different parts of the page letting the user quickly skip to their desired section. I created my own JavaScript file and coded a smooth scrolling effect for the anchor points that is explained more deeply in the code commenting. Lastly, I added in a simple reservation form down the bottom.
+The responsiveness of the website worked really well considering I had to use no media queries for the bootstrap parts of the code. It seems a little clunky in parts, but I assume that’s just bootstrap doing its thing. The hero content was kept the same until around 550px where the hero image gets hidden and the Kinoko text in centered providing better readability for the users. The header also changes around 900px to hide the Kinoko in the top left and center the navigation links. I kept the site as a dark theme as most Japanese restaurants feel this way and makes the images pop and stand out more on the website.
+Overall, I enjoyed working on this project using bootstrap. It’s a bit awkward to get my head around initially but after some playing around I got the hang of it and was able to create a responsive website using its classes and etc. I much prefer coding raw HTML, CSS and JS but this was a nice change of pace.
+Essential Connect
+INTRODUCTION
+WHAT’S THE ISSUE?
+According to the Australian Institute of Health and Welfare an Australian is considered a senior from the age of 65, contributing to 16% of Australia’s total population as of June 2020. As the aging population of Australia grows it is crucial that we start to develop specific applications and services to cater for seniors who are impacted by modern technology. By catering towards the senior population by creating a system, business, service, or user experience, can support the health and wellbeing of the aging population, providing for a richer quality of life. Designing a solution that seniors are confident in using and would use on a regular basis is the key aim.
+PROBLEM STATEMENT
+WHAT’S NEXT?
+Based upon the problem statement I need to create a product that is simple and has a consistent way of functioning, it must keep the seniors connected to the digital society and allow them to access essential services. The solution must be intuitive, be user-friendly and most importantly be effective.
+IDEATION
+LOTUS BLOSSOM – HMW & What if
+IDEATION
+TECHNIQUE
+I utilised the lotus blossom technique to generate a variety of ideas. By creating 9 keywords around the centre, I was able to expand ideas from those to create HMW and What if statements to further generate ideas for a solution.
+POSSIBLE SOLUTIONS
+1.
+Multi-Task App - An application that seniors can use for multiple common tasks like accessing services and communication between family and friends.
+2.
+Workshop – A workshop that gathers seniors together to learn about technology and keeping connected.
+3.
+Tutorial App – An application that has videos and diagrams / instructions of tech savvy people teaching seniors of the functionality of devices and apps.
+REOCURRING IDEAS
+-
+An application
+-
+Simple UI and targeted UX to seniors
+-
+Consistency – Keeping everything consistent is very important to help seniors remember.
+THE SOLUTION
+The most feasible, desirable, and viable solution is to create an application that seniors can use for multiple tasks like accessing essential services and communication between friends and family. This keeps seniors connected and able to quickly access essential services whilst reducing the number of apps they need to use and having a consistent and simple way of functioning.
+LENSES OF INNOVATION
+FEASIBILITY
+Creating an app is very feasible as there is a demand for more senior-friendly apps (Tajudeen, Bahar, Tan, Mustafa, Saedon, Jesudass, 2022). Since the average age of developers worldwide is 31, they are the ones who create these apps, and typically they focus on what they perceive as attractive and well designed (Lee, 2017). This generally leads to seniors being forgotten about in the design process and having to navigate apps and services that are poorly designed for their needs. Nonetheless, there is over 140,000 app developers across Australia that have the capabilities to develop an app catering for the senior population (Dilanyan, 2023).
+DESIRABILITY
+The senior population of Australia is using mobile phones and tablets now more than ever, with 78% of senior Australians having access to a phone in 2020, compared to 51% in 2017 (ACMA, 2021). It was also found that senior Australians were using these devices to try and access professional services (ACMA, 2021). A participant from the 2022 study by Tajudeen, Bahar, Tan, Mustafa, Saedon and Jesudass said:
+“At my age, I process information slowly. I wanted to learn how to use the technology, but it is difficult and complex to understand at times. I don’t know how to learn some of the things (functions/features) on my phone (mobile apps). So, I feel that it is difficult to use the apps.” – Male 68
+The majority of seniors are willing to learn new technology so they can access services and keep connected with digital society, unfortunately seniors need to overcome some hurdles of the designs to be able to use the technology appropriately for their needs (Vaportzis, Glausen, Gow, 2017). By creating an app that combines both access to services and communication between friends and family in a senior friendly
+environment, reduces the amount of apps they need to function on a daily basis and eliminates any inconsistencies that are prominent from the other apps.
+VIABILITY
+For the app to be viable it will have to be supported by partnerships and any government fundings available. Although apps are generally financially inexpensive to develop as in Australia the average cost for an app is $36,000 being 300 working hours. The app expense is also based on how complex the app is and can possibly be created by a fairly small team that could include interns (spdload, 2023). If the app is created by addressing issues such as (Promatics, 2018):
+-
+Complex Navigation and UI
+-
+Irrelevant content on screen
+-
+Visible impairments (e.g. font size)
+It will result in a simple app that gives confidence to the senior population and provide access to all the communication and service needs seniors require whilst being successfully viable and adopted.
+THE SOLUTION
+Essential Connect Application
+OVERVIEW
+Essential Connect is a super simple app that connects seniors to services and people. Aimed at Australians 65 years or older.
+FEATURES
+•
+Large text and buttons
+•
+Simple iconography always paired with text, except home and settings.
+•
+Premade prompts for texting
+•
+Consistent colours
+•
+Consistent functioning features
+o
+Only buttons (no gestures, swiping etc)
+•
+Simple UI and Navigation
+•
+Speech-to-text and Text-to-speech
+•
+Video Calling
+•
+Pairs phone contacts into the app
+•
+Settings to customise the app to their liking.
+All these features specifically cater towards seniors, to better enhance their capabilities of using technology and enriching their quality of life.
+USER TESTING
+METHOD
+The user testing was conducted via the user’s personal mobile phone and was encouraged to say what they were thinking and doing to gather qualitative data. Information was recorded whether they completed the task or not.
+SCENARIOS
+•
+Send a message to John.
+•
+Change the text to bold.
+•
+Find the transport services.
+•
+Call Linda.
+•
+Edit Johns contact and change a text prompt.
+SUGGESTIONS
+•
+Have the text prompts already on the screen, instead of pressing an extra button.
+•
+Allow users to search for services.
+•
+Let users change call, video, and text order on contact screen.
+FINDINGS
+Overall, the user testing provided a constructive insight into how simple and user-friendly the app is based upon completion rate and thinking aloud. The participants helped suggest further improvements to further benefit the functionality for seniors.
+DEPLOYMENT
+Once Essential Connect is deployed the senior-focused app will continue to be developed through countless design interactions where user testing can be conducted more thoroughly on a wider range of Australian seniors. In future, the app will replace numerous other apps as it will combine them into a singular simple and consistent functioning app where seniors feel comfortable with the technology.
+CONCLUSION
+As the aging population of Australia increasingly rises, it is more important than ever to improve how seniors interact with technology. Seniors being unable to use technology to communicate and access essential services can impact their ability to contribute to society lowering their confidence. Essential Connect addresses these issues by incorporating a simple senior-friendly interface that allows seniors to address everyday needs and emergencies, providing a sense of security, peace of mind and independence as they don’t have to rely on others.
+Crime Tracker Web App
+The web app I have created is a crime tracker, showing users real data on a map from an official UK police API endpoint. I originally wanted to display the data on the webpage and not on the map itself but as development progressed, I found it more user friendly to display the majority of the information on the map. Upon opening the web app, the user is greeted with my original map where you pin the location you want. Any data from around the pin is shown on the screen, outputting the category, outcome and outcome date, this data is displayed in a table format for readability. If there is no data, it lets the user know so they aren’t waiting for nothing to load. I also created a severity system so the user can differentiate the difference between minor, moderate and severe crimes. I also created an option for the users to enter full screen mode with the map specifically as it can be more user friendly and allows them to see a greater range without having to zoom. The second API endpoint I used is nominatim, this is a geolocation API where the user can search a location and it retrieves the longitude and latitude which I pull through to leaflet changing the maps location. I used this API so users can quickly and easily find different locations around the UK. I created a second section for a heat map, where the user selects 3 points on the map and a heat map is displayed. The user can selected different crime categories and dates which will display statistics underneath all the buttons. I focused mainly on the heatmap section during development as I found it the most visually appealing, though this section provided to be quite challenging as many errors had to be overcome for the app to run properly. I encountered many errors along the way but the one big one was trying to get the pin map and heat map to be in the same endpoint URL/page.
+I wanted to be able to click a button to adjust the URL from one to the other without having to make a whole other page. Unfortunately, I couldn’t manage to figure this out as it proved to be too difficult and not worthwhile, leaving me to duplicate the map javascript file and transform it into the heatmap file. I definitely could’ve created some more functions like the full screen function to reduce the duplicated code but some proved to be harder than imagined. The
+Wouldn’t work in an external file being referenced in another with a <script> tag referencing it. Another issue I encountered was implementing an automatic date system, after trying various different methods this was my best result:
+Although this result would only show from January 2023 to December 2021 and I couldn’t figure out how to make it display the past 3 years offsetting it by 2 months.
+If I could’ve improved further on this web app I would have added a feature where a chart is generated on the data provided as a modal popup for the user to click on as well as better optimising the code.
+Fish Tank Render in Blender So, I first started out by looking at water physics, specifically flowing water. I originally wanted to have water flowing into a glass cube but decided to abandon this and go for a cube full of water so it could hold fish and other objects inside. Simply just deleting the front 2 faces and the top face I was then able to solidify the fish tank as a base foundation.
+I was able to create the water like effect through the ocean modifier and playing around with some of the wave and size settings to create the right effect that I was looking for. I then keyframed the time of the ocean so it would move when the animation plays. To make the water perfectly cube shaped I simply created a cube and made it the correct size I needed and added the Boolean modifier to the water. Creating the water was the hardest part by far and took multiple days to figure out and complete.
+Creating the fish came out really well, I searched for an image online and imported it as a plane. I then fit to shape a cube with a subdivision modifier on it, to the body of the fish and extruded some of the edges on the top and bottom to create the fins. This model was the first one I UV mapped and was super easy to do so by projecting the object to view in the UV map and fitting it to shape. I created a Bezier curve for the fish to follow to give the illusion they are swimming around in the tank.
+I wanted to add foliage to the fish tank and so I made a plant by using the exact same method I used for making the fish, except I used a plane instead of a cube and solidified it at the end as plants are generally thin. I UV mapped an image of the plant onto the mesh and created a green stem to finish it off. I added a lattice modifier to the plant so I could bend it in different ways, so it wasn’t abnormally flat. This later came in handy as I set up an animation sequence for the plant where it goes up and down as if the water was pushing it around in the tank. To help with more contrast to the fish tank I also gathered some tall grass, short grass for the bed of the tank and a Moai statue for the fish to swim around.
+After creating some walls, and a roof I added in a window to let a glow of sunlight through and illuminate part of the desk. I also had a spotlight above the fish tank to create all of the cool illuminations and reflections you can see in the water.
+After this, it was just a matter of filling out the scene as the main part of the project was complete. I created a bookshelf to put in the back using the bevel modifier and created a procedural wooden texture to accompany it. I filled out the bookshelf with 2 books I made by importing images as planes and extruding out from there. I UV mapped the book covers and pages to the correct fitments and arranged them on the bookshelf. I also added in my teacup from assignment 1.
+Lastly, the wall and desk were feeling a bit too empty and so I created a calendar for the wall, UV mapped it and attached a lattice modifier to bend it into shape. Adding 2 pins
+in the corners to hold it to the wall. I then created a terracotta pot and plate for a pot plant and added my previous plant mesh to this duplicating it a couple of times and bending them into different positions.
+I then realized after double checking the rules that I somehow accidently changed the dimensions of the default cube, so I had to downsize the whole fish tank back to the correct dimensions of 2x2x2 and everything inside as well as the stand, and re-render the whole animation, here is a before and after.
+Photogrammetry Assignment
+My project is based on photo scanning / photogrammetry. The project includes taking hundreds of photographs of a specific object and having all the photos inputted into Reality Capture. The photos are then “Aligned” within reality capture creating a field of camera positions from where I took the photos. Once aligned the mesh is ready to be build by pressing the “Normal or High Detail” button. Once the mesh is built I can texture the mesh by pressing the “Texture” button and the program will handle this once again. Through the process any mistakes that Reality Capture makes I must fix by using a multitude of different tools. Once I have a successful model it will need to be exported and imported into Unreal Engine 5 and have collisions successfully applied. This process has been done for multiple objects instead of a large room.
+Literature and Contextual Review
+Introduction
+In recent years, photogrammetry has been increasing in popularity to create three-dimensional (3D) assets used for various types of 3D applications. It was a method only known to be used in photo scanning faces for characters, but this method had unknown potential that was first brought to light in 2014 to photo scanning environmental assets, built environments and props. In this paper, photogrammetry applications will be explored along with the ease of implementation of the created assets into game engines through an analysis of existing qualitative resources. Findings from the resources will be compared against each other to determine patterns and trends within the related topics. The exploration of this topic is fascinating as 3D environments continue to evolve and scale up over the years. I am interested in this because of the potential this could have in creating exact replicas of real-life environments into a virtual setting. The paper will be structured by exploring scholarly and industry material together throughout which will be organised in topical order.
+Body
+To begin with there is a huge variety of photogrammetry software available to the public through either open source or commercial use. Listing some of the most popular open-source software’s would be (1) Meshroom (2) MicMac (3) VisualSFM (4) OpenMVG and (5) OpenSFM with many more available (Krinadhimar, 2023). Whereas the big commercial software’s which are mainly used by large corporations include (1) AgiSoft Metashape (2) Reality Capture (3) 3DF Zephyr (4) PhotoModeler (5) ReCap Pro (6) Pix4Dmapper and (7) SpeedTree (Carlota, 2023). In a study by Kingsland, she discovered that in a comparison between VisualSFM and Metashape, Metashape had concluding evidence of being more user-friendly and importantly more accurate by over a handful of centimetres (Kingsland, 2020; Dessi et al 2018). Furthermore, in additional studies Metashape was compared against MicMac and Pix4DMapper where it was found that both the commercial grade softwares (Metashape and Pix4DMapper) were similarly accurate against each other with Pix4DMapper being the faster software out of the two (Banaszek et al, 2016). The software’s were producing consistent renderings with low error rates compared to MicMac which had a higher count of error rates for processing the same information (Pyka, 2017). This helps iterate that open-source software’s are more finicky to deal with and should be avoided if the funds are available to access commercial software.
+In more recent studies through industry standards, they say that the best photogrammetry software’s available are determined through your level of experience, needs, funds and preferences. With the choice of Reality Capture, Metashape, 3DF Zephyr, Meshroom and VisualSFM being the most viable options for being the best practise (Mubanga, 2023). A thorough examination of these software’s excluding VisualSFM ultimately discovered Metashape being the prominent application by being the quickest time to render, aligning all images imputed into the software and creating a great texture quality, see Table 1 (Tabeaud, 2023). This is one of the most reliable methods because of the hands-on approach to testing the software with the exact same meta data provided from the exact same equipment. Scholarly materials also backup Metashape being the best software to use just based on plain statistics alone (Kingsland, 2020).
+3DF Zephyr
+Metashape
+Reality Capture
+Meshroom
+Speed (637 Photos)
+1h 17min
+58
+min
+1h 10 min
+>6h
+Images Aligned
+628/637 (98.6%)
+637/637 (100%)
+588/637 (92.3%)
+616/637 (93.7%)
+Mesh Density
+3.03 M faces
+19.68 M faces
+70 M faces
+2.39 M faces (1/4 resolution)
+Texture Quality
+4x 8k textures Very good
+2x 8k textures Good but a bit blurry in places
+1x 8k texture Very good for a single texture
+27x 4k texture A lot of detail but unneeded
+Table 1 – Data comparison of software’s
+A study in 2023 by Ajayi compared Metashape, Reality Capture, 3DF Zephyr and Pix4DMapper in rendering a model of a building. The processing time was recorded with Metashape in first place with a render time of 16 minutes and 36 seconds as seen in Table 2. The renderings were compared against the total volume of the actual building and ranked, see Table 3.
+Pix4DMapper
+Metashape
+3DF Zephyr
+Reality Capture
+Time to Render
+1h 8min 17s
+16min 36s
+34min 34s
+27min 22s
+Table 2 – Processing time for building
+There is a clear winner from the renderings in this study that Metashape is significantly more accurate and faster than the other software’s (Ajayi et al, 2023). This is further discussed that Metashape and Pix4DMapper used Digital Elevation Models to make the buildings volume whereas Reality Capture and 3DF Zephyr used meshes. Explaining why the bottom two software’s were off in their volume estimations. Furthermore, Metashape used an extra 3 settings to its disposal to create an increasingly more accurate render providing better stability across the software (Ajayi et al, 2023). I think this is the best current contemporary practise as shown by Ajayi, Tabeaud and Kingsland which all say Metashape is the best software to use. Provided from both industry and scholarly materials as their data and findings all align. Although there are gaps in this review as studies on other photogrammetry software’s either didn’t exist or weren’t thorough enough to provide any valuable information compared to Metashape.
+Metashape being the best software to use will only give you the best results from the quality of photos being used for the render (Bucchi et al, 2020). Through both industry and scholarly practise, it is evident that the photographer must use RAW files as the file type gives access to sensor data and more meta data to work with compared the JPEG which compresses the file and loses most potential for 3D rendering as shown in figure 1 (Slater, 2016; Alexandrov, 2022).
+Table 3 – Volume measurements of renderings
+Figure 1 – Camera settings RAW compared to JPEG
+To achieve taking RAW photos you must have a DSLR camera for the best quality as only the newest phones are able to take RAW photos and they still aren’t the best compared to a DSLR with a more technological lens (Saincher et al, 2022). Another limiting factor towards getting good photography shots for photogrammetry is having the camera in manual mode instead of automatic (Alexandrov, 2022). For the camera to decide what the exposure looks like it will lead to extremely inconsistent lighting and depth of field because of the camera changing the f/stop and ISO numbers unwillingly (Slater, 2016; Alexandrov, 2022). Additionally, to the camera settings, the lens provides a big factor in the final quality of the rendered model. The software’s quality of render is enhanced by the quality of pixels in the RAW photos which generally come from prime lenses which don’t zoom compared to lenses that zoom (Sheppard, 2013; Alexandrov, 2022). It is important to have consistency in taking the photographs so having auto white balance turned off is crucial to maximising the render quality, this can be adjusted later in post processing if needed if the photographer shot in RAW (Faucher, 2022; Alexandrov, 2022).
+Photogrammetry is becoming more apart of game development as time progresses, where consumers are expecting more and more realistic quality environments, props and characters with new releases (Statham, 2018). Firstly, because Epic Game owns Reality Capture and Unreal Engine 5 (UE5) it is really direct and easy to export from reality capture and import into UE5 (Capturing Reality, 2023; Faucher, 2022). It is as simple as exporting the constructed mesh as an FBX in reality capture and importing it into UE5 with nanite turned on, then setting up the texture in some nodes and dragging it into the scene (Capturing Reality, 2023; Faucher, 2022). On the other hand, Unity has been widely used to visualise 3D spaces of real-world objects for some time (Buyuksalih et al, 2017). But because Unity isn’t directly connected to any
+photogrammetry software’s, there are some times where the game engine does not allow importation of the models because there are simply too many triangles for it to compute (Nazar, Sefercik 2023). Having to either fix this up before in the software or importing it into blender and cutting up the model is required. Unreal Engine 5 takes away this issue as discussed earlier by using nanite to compute all the triangular data which doesn’t have to be from just Reality Capture, but any OBJ or FBX file exported from a 3D software (Capturing Reality, 2023; Faucher, 2022; Laksono et al, 2019). Even Unity itself suggests using Reality Capture for their photogrammetry process as stated in their Photogrammetry workflow guide (Lachambre et al, 2017).
+On the other hand, there isn’t much material on exporting from Metashape and importing into any game engines. The materials that do exist are focused on importing it into Unity but rarely go into too much depth and detail about the process but are more focused on the little details specific to their study (Nazar, Sefercik 2023). It seems that photogrammetry software’s like Metashape and 3DF Zephyr aren’t really used for game development like Reality Capture is. Maybe this is because the company behind Reality Capture Epic Games is targeting their software slightly more towards this type of use than other software’s. Making it more appealing and sophisticated with the added benefit of the company also owning a massive game engine.
+Conclusion
+The findings in this review discover that commercial grade photogrammetry software’s are the best practise as they provide a more enhanced experience and render quality. Metashape was highlighted as an excellent choice in software compared to nearly every other software beating them in almost every category when tested on performance and quality. On the other hand, Reality Capture was assessed as being the most productive workflow for using photogrammetry in video games because of the ease of export and importation into UE5. Lastly, UE5 was considered the better game engine for importing photogrammetry, because of its nanite feature being able to handle millions of triangles that the photogrammetry software makes compared to its rival Unity.
+Tanks Mania Game Description
+Tanks Mania is a top-down tank shooter where the player must progress through multiple levels to complete the game. The player has a total of 100 health to complete these levels. The player can destroy the enemy tanks by either shooting them or by laying a landmine that the enemy patrol tanks can run into. There are multiple different types of enemies that the player can encounter, they can be static or patrolling a
+specific path and the tanks can vary from a regular size to large with multiple turrets or a turret that shoots faster.
+Marketing Hook
+Top-Down Domination: Dominate the Battlefield with Epic Tank Battles in Our Top-Down Shooter!
+Key Features
+1.
+Place landmines strategically for patrol enemies to run into.
+2.
+Enemy tank that shoots 2 bullets at once.
+3.
+Enemy tank that is rapid fire.
+4.
+Barriers that block movement and bullets to strategically play around.
+5.
+Trees that you can hide underneath (enemies also), enemies can still see and destroy you.
+The Device/Controls
+This game is made to be played on a computer with any screen resolution.
+The controls are included in the menu of the game, please refer to it.
+Instructions:
+You must destroy all enemies before it moves you onto the next level. If you die select the level you were currently just on to retry. You can lay a max of 3 landmines per level and your player cannot be blown up by your own landmines. You can push enemies around on the map or into a landmine for a bit of a challenge.
+Character Creation and Animation in Blender
+When I began to construct my character in blender, I firstly followed the in-class tutorial by Joel where he showed us how to make the fingers, hand and spring like joints. This was actually really helpful as constructing these elements was a good stimulation to getting back into the flow of blender after the 3-month break from 3D Media Art Production. Learning new elements such as edge crease tool which helped create the leg and arms and other various techniques. So, at the end of that lesson I was left with some floating body parts that I would eventually begin to model around.
+I then began to construct my character from the bottom up, skipping the block out phase. The first major part was the shin. Even though this was just a simple cylinder, I still found it challenging to model as it was the first proper one. Simply just grabbing and moving vertices around creating my desired shape without ruining the smooth surface that the cylinder provided. Once this was complete, I then followed Joels tutorial on how to model the feet. This was a pretty simple process, creating a sphere and cutting it into a quarter to then extruding and filling in the faces. I duplicated this and cut in into a smaller piece to create the heal of the foot and also duplicated the leg and shortened it to create the inner ankle. I ended up using a lot of cuts to make the edges sharper instead if the crease tool which was a big mistake and was fixed later on.
+I then began to model the middle of the characters body. Starting with the hip area I created a sphere, cut it in half and extruded upwards filling in the top face as well. I added in the control points and moved onto the next section. The belly was really easy and just consisted of a cylinder slightly scaled out on the x and in on the y axis and the job was done. Moving on from the belly to the chest piece was a massive step up and I
+spent a lot of time trying to model it. I firstly began to model it without the use of the mirror modifier and eventually I realised it would be easier and began to use it. I used a cylinder and cut it in half vertically mirroring it to the other side. Using my reference images I began moving vertices around to get the general shape and creating the arch at the front. Once the general shape was finished I extruded along normals on the top and bottom whilst moving the edges down into the neck and on the bottom moving them up into the belly for the rounded effect.
+Once I had completed the body, I started to model the arms. I duplicated the legs and cut 2 folds off to shorten them down and moved them into position creating the elbow and shoulder like joints. To model both of the biceps and forearms I started with a cylinder and adjusted it to the basic shape needed by moving vertices. There was an element on each part that needed to be extruded on a different height to the other, to do this I adjusted the mesh where needed to create the shape I wanted to extrude and extruded it out. I then added control loops again which again was a bad decision as I forgot about the creasing tool. This will affect me later on when unwrapping.
+The last and final part of my modelling was the neck, head, face, crown and the crest on top. Creating the neck was a breeze and is simply a sphere cut in half. When I started modelling the head I created a sphere and deleted the bottom half of it and extruded it downwards. I extruded the bottom along normals to make the helmet go inwards, as well as deleting the front faces and extruding those along normals to, which created the part where the face sits. I used the crease edge tool to create the nice rounded and cornered edges as seen in the picture. Before this version, I used the control loops and created many creases that I didn’t want and couldn’t figure out how to get rid of them. I tried moving vertices around and recreating parts of the helmet, deleting faces and recreating them, but nothing works. This is where Joel reminded me of the crease edge tool, and this fixed every single one of my problems, especially when texturing which I will get into in a moment.
+I then created the crown which was a cylinder with top and bottom faces deleted and extruded in along the normals. I added in some extra cuts at the front to create the inserts which were extruded inward to create the irregular pentagon shapes.
+Lastly, modelling the crest caused me some grief as originally I mirrored it and then applied the mirror to keep modelling but turned out this was a bad idea as when textured it creates massive artifacts as shown in the image. I then deleted the crest and began to model a new one. Starting with a cube scaled to the basic dimensions I then added a control loop down the centre to create the curve you see in the front and back. I bent the back down by extruding and rotating and finally creased the edges to maintain the original look. This created for a far better mesh and allowed for an easy texturing process.
+Nearly all my issues started when I wanted to texture my character. This was because a lot of the meshes had way too many vertices, created from the control loops. There were artifacts all around the top of the shin as well as all around the bicep and a significant number of other places. This created for the texturing the be ruined and a solution was needed. I highlight everything and merged them by distance which deleted all vertices that were on top of each other or close to. This made everything lose its shape but was fixed by using the crease edge tool. Another issues I had was the inner part of the forearm not transferring over to substance painter. This was because I highlight the edge and filled it in by pressing F. Usually this would work but in this instance it didn’t, and so I extruded everything along their normal for a little bit and merged everything in the centre. I restructured some of the mesh to its original state and it finally worked in substance painter to be textured.
+In blender I went through and marked out the appropriate spots to put seams in. As well as creating areas such as the front chest piece and eyes as separate areas so that when texturing I could just click on the area and fill it in by the UV map. Although this did create for some extra mesh density for the face as I needed some different edges to mark out for the eyes as they would either be too far away or too close together.
+Finally, after successfully importing the character model into blender I textured all of the parts. I used smart materials for everything, starting with the leather I applied this to the joints, neck and belly. I applied an iron texture in which I turned down the grey hex value
+and duplicated this layer changing the colour to gold and red to the corresponding parts. For the face I used a dirty glass mirror material which creates a really cool effect around the edges as if it were dirty. After days of modelling and texturing Gladius was finally complete.
+Critical Reflection
+Overall, I think that I achieved my goal decently well with some minor adjustments here and there. I’ve managed to successfully replicate my character illustration with only one change being the shin guard. The texturing of the character I think also excelled, really making the wear and tear add a further element of detail. By modelling the meshes to a good degree and following proper blender design techniques I managed to develop a character model that suffices the assignment criteria and further achieves my goals but has room for improvement.
+The art serious could definitely be improved further, one specific way is by adding further detail to the characters design. By adding more intricate designs to the armour pieces such as the shin guard and further detail around the chest piece or really anywhere it would help improve the overall outcome. Another way it could be improved is by the way the meshes are modelled. If I modelled the character in a more logical and precise way, it would decrease the number of vertices and would’ve been quicker to construct. This meaning, I would need to learn better techniques and skills in blender that can enhance all aspects of development. The last area of improvement I think I could work on is marking the seams for the textures. Specifically on the crest it feels a little stretched in places and could use with some refining.
+In the future I would like to watch some tutorials before I start modelling the character, to get an idea and understanding of techniques that can be used that would make it quicker, easier and better in the modelling pipeline. I would also create more intricate details on the character to give a better level of detail as some parts can be rather bland. Lastly, before putting together the illustration and then modelling I would further research what a roman knight for example has on his armour. I only did this to a small extent to gather the colour theme but by taking in information further and adding details such as a belt or items hanging off the character, it would further enhance the characters outcome.
+VR Game 11687 Virtual Environments Assignment 2 – Narrative Flow Mitchell Skelton (u3236482)
+Figure 1. Floor/Site Plan with Narrative Flow
+Location 1
+Name
+Living Room (Placement Puzzle)
+Interactions
+The player will need to find a key hidden under a rug to gain access to the next room.
+Story Elements
+A note left on the wall, possibly hinting at someone leaving the house in a hurry.
+Sound Assets
+A rug movement sound effect when the player eventually pulls up the corner of the rug. Faint ticking of clocks and creaking floorboards when the player moves around. If the player picks up the note off the wall a paper sound effect.
+Progression
+The key opens the door to the master bedroom.
+Additional Info
+Player has to explore the house a little to find which door is the master bedroom.
+Location 2
+Name
+Master Bedroom (Box Puzzle)
+Interactions
+The player will find a small box on a shelf in this room that needs to be unlocked by placing a book back in its original spot on the shelf. There will
+be a hint in the room as there will be a picture on the desk of the cabinet with the book in the correct spot.
+Story Elements
+The box contains an old family photo of a couple. Although the faces will be scratched out, hopefully building some tension for the player.
+Sound Assets
+Having a faint creaking noise when the player is walking around. A paper noise when the player picks up the photo. The sound of wind every now and then whistling past.
+Progression
+The box has a key inside that gives the player access to the dining room.
+Additional Info
+Location 3
+Name
+Dining Room (Plate Puzzle)
+Interactions
+The player will have to rearrange plates in the correct order based on hints given around the room. This will unlock a kitchen cupboard.
+Story Elements
+On the table there will be an invitation for a dinner, revealing that a special event could’ve occurred in the past.
+Sound Assets
+The sound of wind continues and the sound of ceramic plates and silverware clinking when the player is moving the table setting around. The sound of a door unlocking down the hallway.
+Progression
+In the kitchen cupboard it will have a note with a number written on it, this is the first part of a pin for a box in the next rooms. The breakfast room door will unlock automatically at this point.
+Additional Info
+Location 4
+Name
+Breakfast Room (The Draw)
+Interactions
+The player will have to find and open a draw in the cabinet that contains a list of activities that the previous visitor had planned. Under the list will be a key to the bathroom that the player will have to take.
+Story Elements
+The list was left by a past visitor on the activities they were going to do. The activities are listed 1 through 5 with one of the numbers being faded out. Hinting to the next number in a code.
+Sound Assets
+The sound of a draw opening and closing, more sounds of wind passing by. Paper sound when the list is picked up.
+Progression
+This progresses the player into the bathroom next door.
+Additional Info
+Location 5
+Name
+Bathroom (Locked Box)
+Interactions
+The player has to use to 2 numbers they have got so far to unlock a box in the bathroom.
+Story Elements
+The box has a letter inside of it from a family member that used to live there.
+Sound Assets
+Paper sound effect when picked up, beep/click of the locked box opening
+Progression
+The locked box will have a key inside of it that unlocks the nearest bedroom (2).
+Additional Info
+Location 6
+Name
+Bedroom 2 (Hidden in the Draw)
+Interactions
+The player has to search through the room and in one of the draws is a note with the 3rd number on it.
+Story Elements
+The note was left by a past visitor that is warning people about the family that lives there.
+Sound Assets
+Paper sound effect when picking up the paper, draw sounds when opening and closing draws, possible wind or creaking of floor.
+Progression
+The number will help access a locked box hidden somewhere in the next levels. Finding this note will automatically unlock the door to the next bedroom (3).
+Additional Info
+Location 7
+Name
+Bedroom 3 (Safe)
+Interactions
+The player has to use the 3 numbers found from before to unlock a safe found in this bedroom.
+Story Elements
+Inside the safe is a journal entry that reveals a family secret, hinting at an incident that occurred.
+Sound Assets
+Clicking/beeping of a safe being opened, a flutter of pages when going through the journal.
+Progression
+The safe contains a key to the kitchen down the hallway.
+Additional Info
+Location 8
+Name
+Kitchen (Colour Puzzle)
+Interactions
+The player will find a padlocked cupboard, to get the code for this there is a colour puzzle on the fridge door.
+Story Elements
+A grocery list that is in the locked cupboard hints at something a little strange, the items seem to have been bought in preparation for something.
+Sound Assets
+Humming of the fridge and dripping of the tap
+Progression
+Inside the cupboard is a key to the maids bedroom.
+Additional Info
+Location 9
+Name
+Maids Bedroom (Trunk)
+Interactions
+The player has to open a trunk where they will find a key to the sitting area. The key will be buried beneath a bunch of weapons inside of the trunk.
+Story Elements
+A letter will also be inside the trunk and will provide the final clue to the family’s fate.
+Sound Assets
+Creaking noise of the trunk opening, the sound of metal banging against each other when moving the weapons around.
+Progression
+The key will unlock the sitting area which is right next door.
+Additional Info
+Location 10
+Name
+Sitting Area (Clock)
+Interactions
+The player has to arrange the clock hands (or something similar) to match a hint found earlier in the levels.
+Story Elements
+The clock will represent the final moments of when everything went wrong with the family and the house. The player will find out what happened outside.
+Sound Assets
+Ticking of the clock and a wind rustling.
+Progression
+This will unlock the final door to the backyard area where the game will finish.
+Additional Info
+Game Description
+Escape the Minka is a Virtual Reality escape room game where the player must progress through multiple rooms to complete the game. The player begins at the entrance of the house where all doors are locked apart from one. The player must find the key hidden in each room to unlock the next room(s), the key can be hidden in drawers, cupboards or even just in plain sight. Some of these rooms have unique puzzles that must be completed before the key is revealed, there are also hints scattered throughout some of these rooms, so keep a lookout.
+Marketing Hook
+Trapped in the shadows, illuminate hidden secrets, uncover elusive keys, and solve puzzles as you journey deeper into the darkness! Will you escape the Minka!?
+Key Features
+1.
+Nearly every object is interactable for a more immersive experience.
+2.
+Nearly every drawer in the house can be opened.
+3.
+Unique puzzles.
+4.
+Portable flashlight for searching.
+5.
+Specific keys can only open specific doors.
+The Device/Controls
+Required Device:
+Virtual Reality Headset: Preferably Oculus Rift *This experience is best played when seated.
+Controls:
+Grab button left/right: To grab anything in the game, to open sliding doors and to pull out cupboards and drawers.
+Right thumb stick: To teleport around the environment.
+Left thumb stick: To look around side to side.
+Motion Graphics video on housing crisis
+I will make an educational motion graphics video on the housing affordability crisis in Australia for young adults. With the use of animated infographics and engaging call to actions I hope to inform and present key statistics to the audience. The video will follow in the footsteps of Netflix and Spotify by using a contemporary colour pallet as it generally appeals to my type of audience. I will avoid formal use of language and keep it casual and direct but also witty and sarcastic when appropriate for the voice over, this will make it feel more personal and authentic but also hopefully more digestible. The video will incorporate background music and sound effects to enhance the user’s engagement whilst keeping everything consistent making it clear to follow.
+Specifically, my goal will be not to educate them on how to solve the affordability crisis in Australia as this is on a government level. Instead, I will bring awareness on how they can contribute to easing this crisis and to gain knowledge of the best courses of action to take when purchasing a home for themselves.
+Evaluation
+I set out to create a highly text-based motion graphics video that explores the housing affordability crisis in Australia, targeting young adults aged 18 – 35. As a whole, the video was clearly structured and effectively showed key facts and information towards my chosen audience.
+Firstly, some strong points in my video were the flow of animations and transitions from scene to scene. It helped pace the video and further maintain viewer engagement by providing a logical and seamless structure for them to clearly follow. Additionally, another strong point is the contemporary colour palette and modern design style. This helped display complex information in a simple and visually appealing way, helpful for audiences who are used to faster paced media, aligning with their preferences.
+However, there are a few areas that could have used some improvement. Due to the restrictive time frame of two minutes, parts of the video were cut and further selected scenes were sped up. Ultimately, this caused some scenes to be faster than usual and especially if something was misread, it might have made it more difficult for my audience to take in all the information. Another weakness I felt impacted the video was having text side by side such as in scene 7. This disrupted the flow and smooth readability of the information but was temporarily combated by fading the opacity of the text to change viewer focus. If I were to have more time, I would further refine the timing and reduce any unnecessary segments and completely change the layout of certain scenes to have a more thoughtful and readable design.
+Thanks to this project, I now have better knowledge of how design decisions impact a project's message and clarity and how it affects a target audience’s engagement.
+Giraffe Studio Internship 5 Weeks
+Brief Overview
+During my internship at Giraffe Studio, I was apart of the digital department, where I was supervised by Damian Monaghan the Creative Director. Damian provided ongoing support and guidance and offered constructive feedback throughout my internship. I had regular check-ins whether it was with Damian or a member of the digital department to go through the work I had done for the day. This helped foster a collaborative and encouraging intern/supervisor relationship, which helped me develop both professionally and personally.
+My main role was UX/UI Designer and Web Developer. I contributed to 3 main projects throughout my time there, 1. Complete Group Amalgamation, 2. ANU College of Law website revamp, and 3. Wordpress Development. I further participated in their weekly meetings to gain insight into team workflows and to stay updated on projects.
+I attended Giraffe for a total of 5 weeks, going in on Tuesdays, Wednesdays and Fridays. Spreading out my internship I thought was a good idea, as it allowed me to gain
+knowledge over multiple projects, further enhancing my learning with valuable real-world experience.
+Complete Group Social Media Amalgamation Proposal
+I was tasked with the creation of a social media amalgamation proposal for a construction company in Mitchell called ‘Completeframetruss’ and ‘Complete_interiors_act’. The company wanted to amalgamate their 2 Instagram and Facebook accounts into the name ‘CompleteGroup’ as they were also doing this to their websites.
+The 4 main areas I had to explore were tasks, management, examples and steps to complete. Firstly, I proposed what I thought was best along with extensive research into which account they should rename and keep and which to discontinue. This also included the best courses of action to take, announcements, exclusive content, making a business meta-account for combined management of Instagram and Facebook and project management. I then outlined what Giraffe would need to take on going forward like scheduling posts, testing different visuals and making sure engagement stays up. After, I proposed some examples of already existing Instagram accounts with different styles and themes for Complete Group to choose from for their own account style. Lastly, I listed out all the steps that had to be completed for amalgamation to take place such as username and bio changes.
+The impact of this proposal helped the company visualise the process of social media amalgamation and understand the requirements involved whether its creative or technical. It also provided a practical reference for Giraffe to manage their social medias. The project contributed to the company’s rebranding goal by offering a detailed and research-based plan. By amalgamating their online presence, the company will be able to better connect with their audience and reduce any confusion through the process.
+My supervisor responded very positively to the proposal and only suggested a few minor changes such as removing budgeting from the project management list. He particularly liked that I didn’t just delete their second account but used it to encourage people to follow their new one.
+ANU College of Law
+I was tasked with revamping the ANU College of Law research page on their website. As shown in the PDF, ANU wanted a system where the user can filter through publications, people, events and impact whilst also being able to filter through 8 different categories
+inside of this. I discussed this with my supervisor and we both agreed that the example ANU provided us with was not ideal for the best user experience.
+I developed multiple solutions to create a better user experience and concluded that having the 4 main filters shown at all times was more ideal. We also changed the selection style of the 8 subcategories to a drop-down box as this was more streamlined with their website styling guidelines. I further developed solutions for the user to be able to jump to different sections of the page, significantly improving navigability, especially for mobile viewing. I then went through and developed all the high-fidelity prototypes for both desktop and mobile, implementing images, text and other additional elements to enhance the user experience. Lastly, I created the interactions and animations like hover and click effects that the user will experience.
+The impact of this project helped serve as a guide for the developer to build off and served as a final design reference for ANU. It improved the layout and filtering logic whilst also providing a more intuitive way to explore the research options. The project directly contributed to ANU’s objective of making the research page more accessible and discoverable, whilst also offering a cleaner interface that aligns with their branding.
+The final prototypes were received positively by my supervisor and the digital team, as they appreciated the improved usability, clarity and adherence to ANU’s design standards. There were some minor tweaks that they suggested such as when to left-align or centre-align text and different types of animations I could implement to further improve the pages engagement and readability.
+Wordpress & Bootstrap
+I was tasked with creating a functional website in Wordpress using PHP, semantic HTML and bootstrap for stylisation. I was also expected to use multiple different types of plugins to help make the website easier to build and more intuitive.
+I first had to read all the documentation for Wordpress and Bootstrap so that I knew what I was doing once I started the project. I familiarised myself with Wordpress’s layout and installed the following plugins: Advanced Custom Fields (ACF), Custom Post Type UI (CPT UI), Search & Filter Pro (S&F Pro) and Classic Editor. Classic editor changed the way in which Wordpress looked in the backend so that it was fit for industry standard development with code and not drag and drop elements. ACF is used to create all the content on the page such as text and images. This is then retrieved in PHP using the field name I set such as the following: <?php the_field(‘field_name’); ?>. This is an industry standard technique allowing for the client to be able to add, edit and delete
+content from their website without having to adjust anything within the code. CPT UI is another intuitive plugin that allows for the creation of a separate entity within Wordpress e.g. Projects. Inside of this I created different projects such as Project 1, 2 and 3 which were filled out with the ACF plugin that integrates seamlessly. This was implemented as it is a user-friendly approach to letting clients add projects or similar which are then automatically displayed on the webpage through PHP. The final plugin S&F Pro was the hardest to learn by far. There were many settings and configurations to learn when setting up the search bar and filters and how to implement them correctly in the code. This ultimately was implemented so the user can search through the different projects or filter through the different categories and dates for better navigability of the site.
+Each plugin and tool were chosen based on its suitability for real-world web development scenarios, with a strong focus on creating a smooth client experience and a maintainable codebase. The impact from this made the site practical and flexible and largely contributed to letting site visitors easily navigate and filter through projects whilst adopting a client friendly solution for managing and displaying content.
+My Wordpress website was received very positively by my supervisor and digital team. They were pleasantly surprised by my quick learning ability and proficiency to develop a website in a software and language I had never used before. My supervisor was also impressed by my ability to complete a complex task quickly and apply industry-standard structuring in my development, which he said enhanced the overall client usability.
