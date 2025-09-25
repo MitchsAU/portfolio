@@ -103,7 +103,6 @@
 // document.head.appendChild(style);
 
 
-/* global puter */
 
 import { useState, useEffect, useRef, useMemo } from "react";
 import ReactMarkdown from "react-markdown";
