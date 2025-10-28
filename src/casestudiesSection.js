@@ -8,31 +8,6 @@ export default function CaseStudiesSection() {
   const [caseStudies, setCaseStudies] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fallback static data (optional)
-  const fallbackCaseStudies = [
-    {
-      id: 1,
-      title: "3D Asteroid Web App Visualisation",
-      subtitle: "Explore real-time asteroid data from NASA/JPL",
-      challenge:
-        "To design an engaging 3D experience that visualises real asteroid data, allowing users to explore and understand near-Earth asteroids through an interactive and educational interface.",
-      image: "./images/asteroids.jpg",
-      tags: ["HTML", "CSS", "JavaScript", "Three.js", "Bootstrap", "Adobe XD"],
-      slug: "asteroid-visualisation",
-    },
-    {
-      id: 2,
-      title: "Essential Connect",
-      subtitle:
-        "Senior-friendly app for essential services, communication, and daily tasks.",
-      challenge:
-        "To create an intuitive, user-friendly solution that helps seniors confidently engage with modern technology to access essential services and stay connected.",
-      image: "./images/essentialconnect.png",
-      tags: ["Figma", "UX/UI Design", "Feasibility", "Desirability", "Viability"],
-      slug: "essential-connect",
-    },
-  ];
-
   useEffect(() => {
     const fetchCaseStudies = async () => {
       try {
@@ -51,17 +26,16 @@ export default function CaseStudiesSection() {
           slug: c.slug,
         }));
 
-        setCaseStudies(mapped.length > 0 ? mapped : fallbackCaseStudies);
+        setCaseStudies(mapped);
       } catch (err) {
         console.error("Error fetching case studies:", err);
-        setCaseStudies(fallbackCaseStudies);
       } finally {
         setLoading(false);
       }
     };
 
     fetchCaseStudies();
-  }, [caseStudies, fallbackCaseStudies]);
+  }, []);
 
   if (loading) {
     return (
