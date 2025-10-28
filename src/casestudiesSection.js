@@ -12,7 +12,7 @@ export default function CaseStudiesSection() {
     const fetchCaseStudies = async () => {
       try {
         const res = await fetch(
-          "https://wordpress-1541460-5957272.cloudwaysapps.com//wp-json/wp/v2/casestudy?_embed"
+          "https://wordpress-1541460-5957272.cloudwaysapps.com/wp-json/wp/v2/casestudies?_embed"
         );
         const data = await res.json();
 
