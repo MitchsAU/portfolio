@@ -75,11 +75,11 @@ export default function AboutSection() {
                 Front-End Developer • UX/UI Designer • Tech Enthusiast
               </p>
 
-              <p className="text-secondary mb-3">
+              <p className="text-white-50 mb-3">
                 I'm a Front-End developer who loves building beautiful, functional web applications.
                 My journey in tech has been driven by curiosity and a constant desire to learn and improve.
               </p>
-              <p className="text-secondary mb-4">
+              <p className="text-white-50 mb-4">
                 Whether it's crafting pixel-perfect interfaces or architecting robust web applications,
                 I approach every project with dedication and attention to detail.
               </p>
