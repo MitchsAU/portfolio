@@ -12,7 +12,7 @@ export default function CaseStudiesSection() {
     const fetchCaseStudies = async () => {
       try {
         const res = await fetch(
-          "http://localhost/profportfolio/wp-json/wp/v2/casestudy?_embed"
+          "https://wordpress-1541460-5957272.cloudwaysapps.com//wp-json/wp/v2/casestudy?_embed"
         );
         const data = await res.json();
 
@@ -46,7 +46,7 @@ export default function CaseStudiesSection() {
   }
 
   return (
-    <section className="py-5 px-3">
+    <section className="py-5 px-3 mt-lg-5 mt-0">
       <div className="container" id="casestudies">
         {/* Section Header */}
         <div className="text-center mb-5 fade-in">

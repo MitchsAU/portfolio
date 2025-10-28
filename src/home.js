@@ -32,7 +32,7 @@ export default function Home() {
         <div className="container position-relative">
           <div className="row g-0 position-relative" style={{ zIndex: 1 }}>
             {/* Hero Column */}
-            <div className="col-12 col-lg-7 d-flex flex-column text-lg-start text-center pt-lg-20vh" style={{ minHeight: '50vh', paddingTop: '10vh' }}>
+            <div className="col-12 col-xl-7 d-flex flex-column text-xl-start text-center pt-lg-20vh" style={{ minHeight: '50vh', paddingTop: '10vh' }}>
               {/* Top content */}
               <div>
                 <h1 className="display-1 fw-semibold pb-4">Hi, I'm Mitch</h1>
@@ -40,7 +40,7 @@ export default function Home() {
                 <h3 className="fw-regular fs-5 pe-lg-12vw">
                   I focus on clean, user-friendly digital experiences that blend design and functionality. I enjoy solving complex problems with simple, thoughtful solutions that bring ideas to life.
                 </h3>
-                <div className="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center py-4">
+                <div className="col-12 col-xl-4 d-flex justify-content-center justify-content-xl-start align-items-center py-4">
                   <a href="#projects" className="btn cta-btn px-3 py-2 mb-2 rounded-3 d-inline-block text-white">
                     View My Work
                     <FiArrowRight className="cta-arrow ms-1" size={20} />
@@ -55,7 +55,7 @@ export default function Home() {
             </div>
 
             {/* Chat Column */}
-            <div className="col-12 col-lg-5 d-flex justify-content-center align-items-center text-center p-4" style={{ minHeight: '50vh' }}>
+            <div className="col-12 col-xl-5 d-flex justify-content-center align-items-center text-center p-4" style={{ minHeight: '50vh' }}>
               <div className="w-100" style={{ marginTop: '5vw', minWidth: '25vw' }}>
                 <Bot />
               </div>

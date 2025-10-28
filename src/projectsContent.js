@@ -346,7 +346,7 @@ export default function ProjectContent() {
   setLoading(true);
 
   // Fetch project by slug
-  fetch(`http://localhost/profportfolio/wp-json/wp/v2/project?slug=${id}&_embed`)
+  fetch(`https://wordpress-1541460-5957272.cloudwaysapps.com//wp-json/wp/v2/project?slug=${id}&_embed`)
     .then(res => res.json())
     .then(data => {
       if (data && data.length > 0 && data[0].acf) {

@@ -182,7 +182,7 @@ export default function ProjectCarousel() {
 
   // Fetch projects from WordPress
   useEffect(() => {
-    fetch("http://localhost/profportfolio/wp-json/wp/v2/project?_embed")
+    fetch("https://wordpress-1541460-5957272.cloudwaysapps.com//wp-json/wp/v2/project?_embed")
       .then((res) => res.json())
       .then((data) => {
         const mappedProjects = data.map((p) => ({

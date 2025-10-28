@@ -9,7 +9,7 @@ export default function AboutSection() {
   const [workExperiences, setWorkExperiences] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost/profportfolio/wp-json/wp/v2/work?_embed")
+    fetch("https://wordpress-1541460-5957272.cloudwaysapps.com//wp-json/wp/v2/work?_embed")
       .then((res) => res.json())
       .then((data) => {
         const mapped = data.map((item) => ({
