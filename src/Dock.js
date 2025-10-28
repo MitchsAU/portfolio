@@ -2,8 +2,8 @@
 
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from 'motion/react';
 import { Children, cloneElement, useEffect, useRef, useMemo, useState } from 'react';
-import { FiHome, FiPackage, FiBook, FiSend } from "react-icons/fi";
-
+import { FiHome, FiPackage, FiBook, FiSend, FiUser, FiBookOpen } from "react-icons/fi";
+import { useNavigate, useLocation } from 'react-router-dom';
 import './App.css';
 
 function DockItem({ children, className = '', onClick, mouseX, spring, distance, magnification, baseItemSize }) {
@@ -69,16 +69,45 @@ export default function Dock({
   spring = { mass: 0.1, stiffness: 150, damping: 12 },
   magnification = 70,
   distance = 200,
-  panelHeight = 68, //61
+  panelHeight = 68,
   dockHeight = 256,
   baseItemSize = 50
 }) {
+  const navigate = useNavigate();
+  const location = useLocation();
   const mouseX = useMotionValue(Infinity);
   const isHovered = useMotionValue(0);
 
   const maxHeight = useMemo(() => Math.max(dockHeight, magnification + magnification / 2 + 4), [magnification, dockHeight]);
   const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
   const height = useSpring(heightRow, spring);
+
+  // Scroll helper with offset
+  const scrollToSection = (hash) => {
+    const element = document.querySelector(hash);
+    if (element) {
+      const yOffset = -80; // adjust for dock height
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
+  // Attach navigation to items
+  const navItems = items.map(item => ({
+    ...item,
+    onClick: () => {
+      if (item.href.startsWith('#')) {
+        // Scroll within the same page
+        scrollToSection(item.href);
+      } else if (item.href.includes('/#')) {
+        // Navigate to home page with hash
+        navigate(item.href.split('#')[0]);
+        setTimeout(() => scrollToSection(`#${item.href.split('#')[1]}`), 100); // delay for render
+      } else {
+        navigate(item.href); // normal page navigation
+      }
+    }
+  }));
 
   return (
     <motion.div style={{ height, scrollbarWidth: 'none' }} className="dock-outer">
@@ -96,7 +125,7 @@ export default function Dock({
         role="toolbar"
         aria-label="Application dock"
       >
-        {items.map((item, index) => (
+        {navItems.map((item, index) => (
           <DockItem
             key={index}
             onClick={item.onClick}
@@ -118,8 +147,17 @@ export default function Dock({
 
 // Example usage
 export const dockItems = [
-  { icon: <FiHome />, label: 'Home', onClick: () => console.log('Home clicked') },
-  { icon: <FiPackage />, label: 'Projects', onClick: () => console.log('Projects clicked') },
-  { icon: <FiBook />, label: 'Case Studies', onClick: () => console.log('Case Studies clicked') },
-  { icon: <FiSend />, label: 'Contact', onClick: () => console.log('Contact clicked') }
+  { icon: <FiHome />, label: 'Home', href: '#home' },
+  { icon: <FiBook />, label: 'Projects', href: '#projects' },
+  { icon: <FiBookOpen />, label: 'Case Studies', href: '#casestudies' },
+  { icon: <FiUser />, label: 'About', href: '#about' },
+  { icon: <FiSend />, label: 'Contact', href: '#contact' }
+];
+
+export const dockItemsOuter = [
+  { icon: <FiHome />, label: 'Home', href: '/#home' },
+  { icon: <FiBook />, label: 'Projects', href: '/#projects' },
+  { icon: <FiBookOpen />, label: 'Case Studies', href: '/#casestudies' },
+  { icon: <FiUser />, label: 'About', href: '/#about' },
+  { icon: <FiSend />, label: 'Contact', href: '/#contact' }
 ];

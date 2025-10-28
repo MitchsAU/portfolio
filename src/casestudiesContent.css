@@ -1,0 +1,40 @@
+/* Custom card for sections not fully handled by Bootstrap */
+.custom-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Hero image height */
+.hero-img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Bullet dots */
+.bullet-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff80;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bullet-dot-small {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff80;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Icon sizing */
+.icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+.flex-basis-48 {
+  flex-basis: 48%;
+}

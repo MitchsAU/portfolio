@@ -1,0 +1,108 @@
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in-blur {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  backdrop-filter: blur(12px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glass effect card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Case Study Card */
+.case-card {
+  cursor: pointer;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1),
+  box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  /* --border-width: 1px;
+  border-radius: 1rem;
+  position: relative;
+
+  background: hsl(from var(--surface-3) h s l / 0.25);
+  backdrop-filter: blur(12px); */
+}
+
+.case-card:hover {
+  /* transform: scale(1.02); */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Image Hover Zoom */
+.case-image {
+  transition: transform 0.25s ease;
+}
+
+.case-card:hover .case-image {
+  /* transform: scale(1.1); */
+}
+
+.hoverCard {
+  transition: transform 0.5s ease;
+}
+
+.hoverCard:hover {
+  transform: scale(1.02) !important;
+}
+
+/* Gradient overlay for image */
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(18, 18, 18, 0.9), transparent);
+}
+
+/* Tag style override (Bootstrap badge variant) */
+.badge.bg-light {
+  background-color: rgba(13, 110, 253, 0.1) !important;
+  color: #0d6efd !important;
+  font-weight: 500;
+  border-radius: 50rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* Smooth hover for button arrow */
+.btn-outline-primary svg,
+.btn-primary svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-outline-primary:hover svg,
+.btn-primary:hover svg {
+  transform: translateX(4px);
+}
+
+.glass-btn{
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  transform: translateX(3px) scale(1.02);
+  background: rgba(255, 255, 255, 0.2);
+}

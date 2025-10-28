@@ -103,9 +103,9 @@
 // document.head.appendChild(style);
 
 
-
 import { useState, useEffect, useRef, useMemo } from "react";
 import ReactMarkdown from "react-markdown";
+import { ClipLoader } from "react-spinners";
 
 export default function Bot() {
   const [messages, setMessages] = useState([]);
@@ -184,6 +184,12 @@ export default function Bot() {
       { content: msg, isUser, id: Date.now() + Math.random() },
     ]);
   };
+
+  const newChat = () => {
+  setMessages([]);
+  setInputValue("");
+};
+
 
 // ✅ Send a message
 const sendMessage = async (message) => {
@@ -283,24 +289,40 @@ const sendMessage = async (message) => {
           display: "flex",
           flexDirection: "column",
           borderRadius: "30px",
-          background: "rgba(255,255,255,0.2)",
+          background: "rgba(255, 255, 255, 0.1)",
           backdropFilter: "blur(5px)",
           border: "1px solid rgba(255,255,255,0.2)",
           boxShadow: "0 8px 32px rgba(0,0,0,0.25)",
           padding: "16px",
         }}
-      >
+      > 
+    <div className="gap-2">
         <div
     className="text-center mb-3"
     style={{
       borderRadius: "24px",
-      background: "rgba(255, 255, 255, 0.1)",
+      background: "rgba(255, 255, 255, 0.05)",
       backdropFilter: "blur(5px)",
-      border: "1px solid rgba(255,255,255,0.2)",
+      border: "1px solid rgba(255,255,255,0.1)",
       padding: "8px",
     }}
   >
     Mitch's AI Companion
+  </div>
+  {messages.length > 0 && (
+  <button
+    onClick={newChat}
+    className="btn text-white mb-1"
+    style={{
+        borderRadius: "24px",
+        background: "rgba(255, 255, 255, 0.05)",
+        backdropFilter: "blur(5px)",
+        border: "1px solid rgba(255,255,255,0.1)",
+    }}
+  >
+  New Chat
+  </button>
+  )}
   </div>
         <div
           ref={messagesContainerRef}
@@ -310,9 +332,11 @@ const sendMessage = async (message) => {
             marginBottom: "8px",
           }}
         >
+          
           {messages.length === 0 && (
             <div className="text-center text-black-75 mt-5">
-              Ask my AI companion anything about <br /> my projects below.
+              Ask my AI companion anything about <br /> my projects below. <br /> <br /> When you send a message below, it will prompt you to sign<br/> into the engine for my AI (Puter.com).
+              <br/><br/>This is fully open source and free to use. <br /> <br /> Enjoy!
             </div>
           )}
 
@@ -324,7 +348,7 @@ const sendMessage = async (message) => {
               }`}
             >
               <div
-                className="p-3"
+                className="px-3 py-2"
                 style={{
                   maxWidth: "70%",
                   borderRadius: "30px",
@@ -368,8 +392,13 @@ const sendMessage = async (message) => {
                   fontStyle: "italic",
                 }}
               >
-                <div className="text-start">
-                  <span>💬 Thinking...</span>
+                <div className="d-flex align-items-center text-start">
+                  <ClipLoader className="me-2"
+                    color={'#fff'}
+                    size={20}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"/>
+                  <span>Thinking</span>
                 </div>
               </div>
             </div>
@@ -384,12 +413,12 @@ const sendMessage = async (message) => {
     onKeyDown={handleKeyPress}
     placeholder={aiReady ? "Ask me anything..." : "AI is loading..."}
     disabled={!aiReady || isLoading}
-    className="form-control flex-grow-1"
+    className="form-control flex-grow-1 text-white"
     style={{
       borderRadius: "24px",
-      background: "rgba(255, 255, 255, 0.1)",
+      background: "rgba(255, 255, 255, 0.05)",
       backdropFilter: "blur(5px)",
-      border: "1px solid rgba(255,255,255,0.2)",
+      border: "1px solid rgba(255,255,255,0.1)",
       outline: "none",
     }}
   />
@@ -397,18 +426,17 @@ const sendMessage = async (message) => {
   <button
     onClick={() => sendMessage(inputValue)}
     disabled={!aiReady || isLoading || !inputValue.trim()}
-    className="btn text-black"
+    className="btn text-white"
     style={{
       borderRadius: "24px",
-      background: "rgba(255, 255, 255, 0.1)",
+      background: "rgba(255, 255, 255, 0.05)",
       backdropFilter: "blur(5px)",
-      border: "1px solid rgba(255,255,255,0.2)",
+      border: "1px solid rgba(255,255,255,0.1)",
     }}
   >
     {isLoading ? "Sending..." : "Send"}
   </button>
 </div>
-
       </div>
     </div>
   );

@@ -1,0 +1,78 @@
+.carousel-3d {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  perspective: 1800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.carousel-inner-3d {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  transform-style: preserve-3d;
+}
+
+.carousel-item-3d {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 450px;
+  transform-origin: center center;
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), 
+              opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  will-change: transform, opacity;
+    /* box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15); */
+}
+
+.carousel-item-3d.prev,
+.carousel-item-3d.next {
+  transform: scale(0.9) rotateY(var(--angle)) translateZ(var(--depth));
+  opacity: 0.7;
+}
+
+.carousel-item-3d.active {
+  transform: scale(1) rotateY(0deg) translateZ(0);
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-item-3d img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  image-rendering: crisp-edges;
+  border-radius: 2rem 2rem 0 0 ;
+}
+
+.card{
+    background: transparent;
+}
+
+.card-body {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  border-radius: 0 0 1rem 1rem;
+  padding: 1rem;
+}
+
+/* Make only the front + nearby cards visible */
+.carousel-item-3d:nth-child(n+1) {
+  /* opacity: 0.15; */
+}
+
+.carousel-item-3d:nth-child(odd),
+.carousel-item-3d:nth-child(even) {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* The central one gets full opacity via inline transform alignment */
+.carousel-inner-3d {
+  pointer-events: none;
+}

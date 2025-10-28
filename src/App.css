@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #root {
   margin: 0;
   padding: 0;
@@ -8,7 +12,7 @@ html, body, #root {
   overflow-x: hidden;
   overflow-y: auto;
   background: #000;
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Figtree', 'Inter', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
   color: #fff;
 }
@@ -68,10 +72,10 @@ html, body, #root {
   width: fit-content;
   gap: 1rem;
   border-radius: 1rem; /*1rem*/
-  background-color: #060010;
+  /* background-color: #060010; */
   padding: 0 0.5rem 0.5rem;
   color: #fff;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -108,13 +112,13 @@ html, body, #root {
   width: fit-content;
   white-space: pre;
   border-radius: 0.375rem; /*0.375rem*/
-  background-color: #060010;
+  /* background-color: #060010; */
   padding: 0.125rem 0.5rem;
   font-size: 0.75rem;
   color: #fff;
   transform: translateX(-50%);
   font-size: 13px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -135,19 +139,13 @@ html, body, #root {
   object-fit: cover;
 }
 
-html.bpHeightFill.bpReset:root {
-  --bpPrimary-1: #101010 !important;
-  --bpGray-900: #f0f0f0 !important;
-}
-
-
 .text-pre-wrap {
   white-space: pre-wrap !important;
 }
 
 input::placeholder {
-  color: #000;
-  font-weight: 400;
+  color: #fff !important;
+  font-weight: 300;
 }
 
 /* Scrollbar Styling*/
@@ -169,4 +167,240 @@ input::placeholder {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.35);
+}
+
+@media (min-width: 992px) {
+  
+  .pe-lg-12vw {
+    padding-right: 12vw !important;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .pt-lg-20vh {
+    padding-top: 18.5vh !important;
+  }
+}
+
+.cta-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #050505;
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+  transform: translateX(3px) scale(1.02);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-btn .cta-arrow {
+  transition: transform 0.3s ease;
+}
+
+.cta-btn:hover .cta-arrow {
+  transform: translateX(5px);
+}
+
+
+
+/* Logo Loop Styles */
+
+.logoloop {
+  position: relative;
+  overflow-x: hidden;
+
+  --logoloop-gap: 32px;
+  --logoloop-logoHeight: 28px;
+  --logoloop-fadeColorAuto: #ffffff;
+}
+
+.logoloop--scale-hover {
+  padding-top: calc(var(--logoloop-logoHeight) * 0.1);
+  padding-bottom: calc(var(--logoloop-logoHeight) * 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logoloop {
+    --logoloop-fadeColorAuto: #0b0b0b;
+  }
+}
+
+.logoloop__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  user-select: none;
+}
+
+.logoloop__list {
+  display: flex;
+  align-items: center;
+}
+
+.logoloop__item {
+  flex: 0 0 auto;
+  margin-right: var(--logoloop-gap);
+  font-size: var(--logoloop-logoHeight);
+  line-height: 1;
+}
+
+.logoloop__item:last-child {
+  margin-right: 0;
+}
+
+.logoloop__node {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoloop__item img {
+  height: var(--logoloop-logoHeight);
+  width: auto;
+  display: block;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  /* Links handle interaction */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop--scale-hover .logoloop__item {
+  overflow: visible;
+}
+
+.logoloop--scale-hover .logoloop__item:hover img,
+.logoloop--scale-hover .logoloop__item:hover .logoloop__node {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+.logoloop--scale-hover .logoloop__node {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoloop__link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.logoloop__link:hover {
+  opacity: 0.8;
+}
+
+.logoloop__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.logoloop--fade::before,
+.logoloop--fade::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: clamp(24px, 8%, 120px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.logoloop--fade::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.logoloop--fade::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--logoloop-fadeColor, var(--logoloop-fadeColorAuto)) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logoloop__track {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .logoloop__item img,
+  .logoloop__node {
+    transition: none !important;
+  }
+}
+
+.logoloop__node svg {
+  width: 100%;
+  height: 100%;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.logoloop ul {
+  list-style-type: none;
+}
+
+.carouselContainer{
+  /* margin-bottom: 6rem; */
+}
+
+.test{
+   min-height: 100vh;
+}
+
+.light-rays-section {
+  position: relative;
+  overflow: hidden;
+  --fade-amount: 25%;
+  mask-image: linear-gradient(to bottom, transparent, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
+  padding-bottom: 5rem; 
+}
+
+
+/* Fixed background effect only within section bounds */
+.light-rays-section > :first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Fill the entire section */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Foreground content */
+.light-rays-content {
+  position: relative;
+  z-index: 9999;
+}
+
+.mobile-padding{
+  margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  footer {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .mobile-padding {
+    margin-bottom: 60px;
+  }
 }

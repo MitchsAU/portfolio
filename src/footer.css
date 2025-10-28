@@ -1,0 +1,57 @@
+.footer-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover .icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Background circles */
+.footer-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.footer-circle {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.footer-circle.primary {
+  bottom: -5rem;
+  left: -5rem;
+  background: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+.footer-circle.secondary {
+  bottom: -5rem;
+  right: -5rem;
+  background: rgba(var(--bs-secondary-rgb), 0.05);
+}

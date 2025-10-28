@@ -193,70 +193,26 @@
 'use client';
 
 import './App.css';
-import Beams from './Beams';
-import Dock, { dockItems } from './Dock';
-import Bot from './Bot';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './home';
+import ProjectPage from './projectPage';
+import CaseStudyPage from "./casestudiesContent"
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
-    <div className="position-relative">
-      {/* Hero Section */}
-   <div className="container-fluid position-relative"
-     style={{ zIndex: 1, overflow: 'visible' }}>
-  {/* Background Beams */}
-  <div className="position-absolute top-0 start-0 w-100 vh-100" style={{ zIndex: 0, pointerEvents: 'none' }}>
-    <Beams />
-  </div>
-
-  {/* Hero + Chat Row */}
-  <div className="row g-0 position-relative" style={{ zIndex: 1 }}>
-    {/* Hero Column */}
-    <div className="col-12 col-md-12 col-lg-8 d-flex flex-column justify-content-start text-start"
-         style={{ paddingLeft: '8vw', paddingTop: '20vh', minHeight: '50vh' }}>
-      <h1 className="display-3 fw-medium pb-4">Hi, I'm Mitch</h1>
-      <h2 className="display-6 fw-medium">UX/UI Designer and Web <br /> Developer</h2>
-    </div>
-
-    {/* Chat Column */}
-    <div className="col-12 col-md-12 col-lg-3 d-flex justify-content-center align-items-center text-center p-4"
-         style={{ minHeight: '50vh' }}>
-      <div className="w-100" style={{ marginTop: '5vw', minWidth: '25vw', }}>
-        <Bot />
-      </div>
-    </div>
-  </div>
-</div>
-
-      {/* Dock fixed at bottom */}
-      <Dock items={dockItems} />
-
-      {/* Scroll Section */}
-      <div className="w-100" style={{ height: '100vh', background: '#000', display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#fff', zIndex: 1 }}>
-        <h1>Scroll Section</h1>
-      </div>
+    <div className='carouselContainer'>
+      <BrowserRouter>
+       <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
+          <Route path="/case-study/:id" element={<CaseStudyPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
-
-
-//backup code
-
-// <div className="row">
-//       <div className='col-6'>
-//         <div className="d-flex justify-content-center align-items-center vh-100">
-//           Hello World
-//         </div>
-//       </div>
-//       <div className='col-6'>
-//         <div className="app-container">
-//           <Beams />
-//           <Dock items={dockItems} />
-//           {/* <Bot /> */}
-//         </div>
-//       </div>
-      
-//     </div>
-
 
