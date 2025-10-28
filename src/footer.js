@@ -1,17 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 import "./footer.css";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
-  const navLinks = [
-    { label: "Projects", href: "/" },
-    { label: "Case Studies", href: "/case-studies" },
-    { label: "About", href: "/#about" },
-    { label: "Contact", href: "/#contact" },
-  ];
 
   const socialLinks = [
     { icon: Github, label: "GitHub", href: "https://github.com/MitchsAU" },

@@ -173,13 +173,12 @@ import { useState, useEffect } from "react";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import { FiBook } from "react-icons/fi";
 import { ArrowRight } from "lucide-react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./carousel2D.css";
 
 export default function ProjectCarousel() {
   const [projects, setProjects] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
-  const navigate = useNavigate();
 
   // Fetch projects from WordPress
   useEffect(() => {

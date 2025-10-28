@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from 'motion/react';
 import { Children, cloneElement, useEffect, useRef, useMemo, useState } from 'react';
-import { FiHome, FiPackage, FiBook, FiSend, FiUser, FiBookOpen } from "react-icons/fi";
+import { FiHome, FiBook, FiSend, FiUser, FiBookOpen } from "react-icons/fi";
 import { useNavigate, useLocation } from 'react-router-dom';
 import './App.css';
 
@@ -74,7 +74,6 @@ export default function Dock({
   baseItemSize = 50
 }) {
   const navigate = useNavigate();
-  const location = useLocation();
   const mouseX = useMotionValue(Infinity);
   const isHovered = useMotionValue(0);
 

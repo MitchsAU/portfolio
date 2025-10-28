@@ -325,7 +325,7 @@
 // }
 
 
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { FiFileText, FiGithub, FiArrowLeft, FiExternalLink } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import Beams from './Beams';

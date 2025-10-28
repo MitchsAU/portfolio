@@ -381,7 +381,7 @@
 // };
 
 
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FiArrowLeft, FiCalendar, FiClock } from "react-icons/fi";
 import Beams from "./Beams";
