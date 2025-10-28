@@ -61,7 +61,7 @@ export default function CaseStudiesSection() {
     };
 
     fetchCaseStudies();
-  }, []);
+  }, [caseStudies, fallbackCaseStudies]);
 
   if (loading) {
     return (
