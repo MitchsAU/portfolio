@@ -81,35 +81,6 @@ export default function Dock({
   const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
   const height = useSpring(heightRow, spring);
 
-  useEffect(() => {
-  const dock = document.querySelector('.dock-outer');
-  if (!dock || !window.visualViewport) return;
-
-  const updateDockPosition = () => {
-    const visualHeight = window.visualViewport.height;
-    const windowHeight = window.innerHeight;
-    const diff = windowHeight - visualHeight;
-
-    // Clamp the value: if it’s too big, ignore it
-    if (diff > 0 && diff < 200) {
-      dock.style.bottom = `${diff}px`;
-    } else {
-      dock.style.bottom = '0px';
-    }
-  };
-
-  window.visualViewport.addEventListener('resize', updateDockPosition);
-  window.visualViewport.addEventListener('scroll', updateDockPosition);
-
-  updateDockPosition();
-
-  return () => {
-    window.visualViewport.removeEventListener('resize', updateDockPosition);
-    window.visualViewport.removeEventListener('scroll', updateDockPosition);
-  };
-}, []);
-
-
   // Scroll helper with offset
   const scrollToSection = (hash) => {
     const element = document.querySelector(hash);

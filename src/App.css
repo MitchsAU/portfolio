@@ -53,20 +53,12 @@ html, body, #root {
   z-index: 1;
 }
 
-/* .dock-outer {
+.dock-outer {
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 10;
-} */
-
-.dock-outer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   z-index: 10;
 }
 
