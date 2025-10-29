@@ -416,12 +416,3 @@ input::placeholder {
     margin-right: auto;
   }
 }
-
-@supports (height: 100svh) {
-  .dock-outer {
-    position: fixed;
-    bottom: env(safe-area-inset-bottom);
-    width: 100%;
-    height: auto;
-  }
-}

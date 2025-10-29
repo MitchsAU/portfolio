@@ -81,6 +81,31 @@ export default function Dock({
   const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
   const height = useSpring(heightRow, spring);
 
+  useEffect(() => {
+  if (!/iPad|Macintosh/.test(navigator.userAgent) || !('ontouchend' in document)) return;
+
+  const dock = document.querySelector('.dock-outer');
+  if (!dock || !window.visualViewport) return;
+
+  const updateDockPosition = () => {
+    const visualHeight = window.visualViewport.height;
+    const innerHeight = window.innerHeight;
+    const difference = innerHeight - visualHeight;
+    dock.style.bottom = difference > 60 ? `${difference}px` : '0px';
+  };
+
+  window.visualViewport.addEventListener('resize', updateDockPosition);
+  window.visualViewport.addEventListener('scroll', updateDockPosition);
+
+  updateDockPosition();
+
+  return () => {
+    window.visualViewport.removeEventListener('resize', updateDockPosition);
+    window.visualViewport.removeEventListener('scroll', updateDockPosition);
+  };
+}, []);
+
+
   // Scroll helper with offset
   const scrollToSection = (hash) => {
     const element = document.querySelector(hash);
