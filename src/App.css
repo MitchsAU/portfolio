@@ -169,14 +169,14 @@ input::placeholder {
   background: rgba(255, 255, 255, 0.35);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   
   .pe-lg-12vw {
     padding-right: 12vw !important;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   
   .pt-lg-20vh {
     padding-top: 18.5vh !important;
@@ -402,5 +402,17 @@ input::placeholder {
 @media (max-width: 992px) {
   .mobile-padding {
     margin-bottom: 60px;
+  }
+}
+
+.logoloop {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .logoloop {
+    margin-left: 0;
+    margin-right: auto;
   }
 }
