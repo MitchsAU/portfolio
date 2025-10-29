@@ -81,6 +81,26 @@ export default function Dock({
   const heightRow = useTransform(isHovered, [0, 1], [panelHeight, maxHeight]);
   const height = useSpring(heightRow, spring);
 
+  useEffect(() => {
+    const updateDockPosition = () => {
+      const dock = document.querySelector('.dock-outer');
+      if (dock) {
+        const visualHeight = window.visualViewport?.height || window.innerHeight;
+        dock.style.bottom = `${window.innerHeight - visualHeight}px`;
+      }
+    };
+
+    window.visualViewport?.addEventListener('resize', updateDockPosition);
+    window.visualViewport?.addEventListener('scroll', updateDockPosition);
+
+    updateDockPosition(); // Initial run
+
+    return () => {
+      window.visualViewport?.removeEventListener('resize', updateDockPosition);
+      window.visualViewport?.removeEventListener('scroll', updateDockPosition);
+    };
+  }, []);
+
   // Scroll helper with offset
   const scrollToSection = (hash) => {
     const element = document.querySelector(hash);
