@@ -82,16 +82,20 @@ export default function Dock({
   const height = useSpring(heightRow, spring);
 
   useEffect(() => {
-  if (!/iPad|Macintosh/.test(navigator.userAgent) || !('ontouchend' in document)) return;
-
   const dock = document.querySelector('.dock-outer');
   if (!dock || !window.visualViewport) return;
 
   const updateDockPosition = () => {
     const visualHeight = window.visualViewport.height;
-    const innerHeight = window.innerHeight;
-    const difference = innerHeight - visualHeight;
-    dock.style.bottom = difference > 60 ? `${difference}px` : '0px';
+    const windowHeight = window.innerHeight;
+    const diff = windowHeight - visualHeight;
+
+    // Clamp the value: if it’s too big, ignore it
+    if (diff > 0 && diff < 200) {
+      dock.style.bottom = `${diff}px`;
+    } else {
+      dock.style.bottom = '0px';
+    }
   };
 
   window.visualViewport.addEventListener('resize', updateDockPosition);
