@@ -60,7 +60,6 @@ html, body, #root {
   display: flex;
   justify-content: center;
   z-index: 10;
-  transform: translateZ(0);
 }
 
 .dock-panel {
@@ -415,14 +414,5 @@ input::placeholder {
   .logoloop {
     margin-left: 0;
     margin-right: auto;
-  }
-}
-
-@supports (height: 100svh) {
-  .dock-outer {
-    position: fixed;
-    bottom: env(safe-area-inset-bottom);
-    width: 100%;
-    height: auto;
   }
 }
