@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState, memo } from 'react';
-import { SiReact, SiJavascript, SiPhp, SiHtml5, SiCss3, SiWordpress, SiSharp, SiBootstrap, SiUnity, SiUnrealengine, SiAdobexd, SiFigma, SiAdobeaftereffects, SiAdobephotoshop, SiAdobepremierepro, SiThreedotjs, SiOpenai } from 'react-icons/si';
+import { SiReact, SiJavascript, SiPhp, SiHtml5, SiCss3, SiWordpress, SiBootstrap, SiUnity, SiUnrealengine, SiAdobexd, SiFigma, SiAdobeaftereffects, SiAdobephotoshop, SiAdobepremierepro, SiThreedotjs, SiOpenai } from 'react-icons/si';
 import './App.css';
 
 const ANIMATION_CONFIG = {
@@ -302,22 +302,21 @@ export const LogoLoop = memo(
 
 const Logos = [
     { node: <SiReact />, title: "React", href: "https://react.dev" },
-    { node: <SiJavascript />, title: "JS", href: "https://nextjs.org" },
-    { node: <SiPhp />, title: "PHP", href: "https://www.typescriptlang.org" },
-    { node: <SiHtml5 />, title: "HTML", href: "https://tailwindcss.com" },
-    { node: <SiCss3 />, title: "CSS", href: "https://www.typescriptlang.org" },
-    { node: <SiWordpress />, title: "WP", href: "https://tailwindcss.com" },
-    { node: <SiSharp />, title: "C#", href: "https://www.typescriptlang.org" },
-    { node: <SiBootstrap />, title: "Bootstrap", href: "https://tailwindcss.com" },
-    { node: <SiUnity />, title: "Unity", href: "https://www.typescriptlang.org" },
-    { node: <SiUnrealengine />, title: "UE", href: "https://tailwindcss.com" },
-    { node: <SiFigma />, title: "Figma", href: "https://tailwindcss.com" },
-    { node: <SiAdobexd />, title: "XD", href: "https://www.typescriptlang.org" },
-    { node: <SiAdobeaftereffects />, title: "After Effects", href: "https://tailwindcss.com" },
-    { node: <SiAdobephotoshop />, title: "Photoshop", href: "https://www.typescriptlang.org" },
-    { node: <SiAdobepremierepro />, title: "Premier", href: "https://tailwindcss.com" },
-    { node: <SiThreedotjs />, title: "ThreeJS", href: "https://tailwindcss.com" },
-    { node: <SiOpenai />, title: "OpenAI", href: "https://tailwindcss.com" },
+    { node: <SiJavascript />, title: "JS", href: "https://www.javascript.com/" },
+    { node: <SiPhp />, title: "PHP", href: "https://www.php.net/" },
+    { node: <SiHtml5 />, title: "HTML", href: "https://html.com/" },
+    { node: <SiCss3 />, title: "CSS", href: "https://www.w3.org/Style/CSS/Overview.en.html" },
+    { node: <SiWordpress />, title: "WP", href: "hhttps://wordpress.org/" },
+    { node: <SiBootstrap />, title: "Bootstrap", href: "https://getbootstrap.com/" },
+    { node: <SiUnity />, title: "Unity", href: "https://unity.com/" },
+    { node: <SiUnrealengine />, title: "UE", href: "https://www.unrealengine.com/en-US" },
+    { node: <SiFigma />, title: "Figma", href: "https://www.figma.com/" },
+    { node: <SiAdobexd />, title: "XD", href: "https://adobexdplatform.com/" },
+    { node: <SiAdobeaftereffects />, title: "After Effects", href: "https://www.adobe.com/au/products/aftereffects.html" },
+    { node: <SiAdobephotoshop />, title: "Photoshop", href: "https://www.adobe.com/products/photoshop.html" },
+    { node: <SiAdobepremierepro />, title: "Premier", href: "https://www.adobe.com/au/products/premiere.html" },
+    { node: <SiThreedotjs />, title: "ThreeJS", href: "https://threejs.org/" },
+    { node: <SiOpenai />, title: "OpenAI", href: "https://openai.com/" },
 ];
 
 LogoLoop.displayName = 'LogoLoop';

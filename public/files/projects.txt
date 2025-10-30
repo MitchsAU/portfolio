@@ -402,3 +402,183 @@ I first had to read all the documentation for Wordpress and Bootstrap so that I 
 content from their website without having to adjust anything within the code. CPT UI is another intuitive plugin that allows for the creation of a separate entity within Wordpress e.g. Projects. Inside of this I created different projects such as Project 1, 2 and 3 which were filled out with the ACF plugin that integrates seamlessly. This was implemented as it is a user-friendly approach to letting clients add projects or similar which are then automatically displayed on the webpage through PHP. The final plugin S&F Pro was the hardest to learn by far. There were many settings and configurations to learn when setting up the search bar and filters and how to implement them correctly in the code. This ultimately was implemented so the user can search through the different projects or filter through the different categories and dates for better navigability of the site.
 Each plugin and tool were chosen based on its suitability for real-world web development scenarios, with a strong focus on creating a smooth client experience and a maintainable codebase. The impact from this made the site practical and flexible and largely contributed to letting site visitors easily navigate and filter through projects whilst adopting a client friendly solution for managing and displaying content.
 My Wordpress website was received very positively by my supervisor and digital team. They were pleasantly surprised by my quick learning ability and proficiency to develop a website in a software and language I had never used before. My supervisor was also impressed by my ability to complete a complex task quickly and apply industry-standard structuring in my development, which he said enhanced the overall client usability.
+
+
+
+Im a UX/UI Design and Web developer that dabbles around in game development. I love building beautiful, functional web applications. My journey in tech has been driven by curiosity and a constant desire to learn and improve.
+Whether it's crafting pixel-perfect interfaces or architecting robust web applications, I approach every project with dedication and attention to detail. I focus on clean, user-friendly digital experiences that blend design and functionality. I enjoy solving complex problems with simple, thoughtful solutions that bring ideas to life.
+Im currently studying at the university of canberra in a bachelors of Interaction Design and a Breadth Major in Games Design. 
+
+
+Languages: HTML, CSS, Javascript, PHP.
+
+Tools: Figma, Unreal Engine 5, After Effects, Blender, Git, Unity, Premier Pro, Photoshop, Illustrator, AdobeXD.
+
+Frameworks: React, Three.js , Bootstrap.
+
+Other: API integration, responsive design, UI design, UX research, Wordpress websites.
+
+My favourite project is the 3D Asteroid Web App Visualisation
+The project that best show my UX skills is the Asteroid Web App and this portfolio
+My Unreal Engine work isnt published or accessibly currently, sorry for any inconvenience
+
+How do i approach a new project?
+I first start by ideating and researching designs then start creating mockups of what im going to design. I then begin development refering back to my mockups.
+
+I prefer Front-End Development as thats where my expertise lies, but am actively studing back-end development in my free time. I'd like to do Full-stack development in the near future.
+
+What inspiried me to get into design/development was my love for IT and technology, I knew that i wanted to do something specifically with coding but not full on software engineering and thus i ended up in interaction design.
+
+For fun I play video games, specifally Rust, COD, Diablo IV and many others. I also play tennis and go to gym.
+
+My favourite programming languages is Javascript because there is so much versatility that can be done with it.
+
+I built this chatbot so that users could actively engage with my website and get answers about topics that may not be displayed. Its almost like you can interview me without me being present.
+It provides summaries and other information of my projects so that you dont have to go looking for it if you want to know something specific.
+
+You can contact me through my email mitchellskeltondesign@gmail.com or the contact form at the bottom of this page.
+
+Always make these links clickable and open in a new tab
+Linkdin: https://www.linkedin.com/in/mitchell-skelton/
+Github: https://github.com/MitchsAU
+Itch.io: https://mitchsau.itch.io/
+Instagram: https://www.instagram.com/mitchsdesign_/
+Email: mitchellskeltondesign@gmail.com
+
+Im open for collaborative works.
+You can view my resume upon request through email or contact form due to personal details on it.
+
+“Who made you?” → “I was created by Mitch using code and a knowledge base of his portfolio work.”
+
+“Are you ChatGPT?” → “No, I’m a custom chatbot trained with information about Mitch’s work and skills.”
+
+“Can you help me learn about Mitchell?” → “Sure! I can tell you about his skills, projects, and design philosophy.”
+
+Always make these links clickable for projects:
+3D Asteroid Web App: https://www.mitchellskelton.dev/project/3d-asteroid-web-app-visualisation
+Uk Crime Map: https://www.mitchellskelton.dev/project/uk-crime-tracker-web-app
+Tanks Mania: https://www.mitchellskelton.dev/project/tanks-mania
+Essential Connect: https://www.mitchellskelton.dev/project/essential-connect
+Housing Affordability Crisis: https://www.mitchellskelton.dev/project/housing-affordability-crisis-awareness-motion-graphic-video
+AI Interactive Chatbot: https://www.mitchellskelton.dev/project/ai-chatbot-interactive-portfolio
+
+Always make these links clickable for case studies:
+Essential Connect: https://www.mitchellskelton.dev/case-study/essential-connect
+3D Asteroid Web App: https://www.mitchellskelton.dev/case-study/3d-asteroid-web-app-visualisation
+
+
+### 3D ASTEROID WEB APP Info
+
+3D Asteroid Web App Visualisation
+Explore real-time asteroid data from NASA/JPL with interactive 3D visualisations.
+
+October 2025
+3D Asteroid Web App Visualisation
+The Problem
+Astronomical data, while fascinating, is often hidden behind layers of technical language, spreadsheets, and raw numerical datasets. For the average user, understanding asteroid movement, size, and proximity to Earth can be intimidating. Many existing tools prioritise accuracy but fail to deliver meaningful interaction or engagement. My goal was to transform this complexity into a visually immersive and educational experience — one that simplifies data without losing its scientific integrity.
+
+Asteroid data is often presented in complex formats, making it difficult for non-experts to interpret.
+
+Limited interactivity reduces user engagement and comprehension of space data.
+
+Users struggle to visualise scale, distance, and motion using traditional 2D charts or text.
+
+Educational resources rarely merge real-time data with intuitive visual storytelling.
+
+My Development Process
+1. Research & Problem Definition
+The research phase focused on understanding how space data could be made more approachable and interactive. I began by exploring NASA’s Near Earth Object (NEO) API to understand the data structure — including attributes such as size, distance, and orbital path. I studied other astronomy education platforms to identify what worked well visually and where they failed to hold user attention. This stage also involved investigating user behaviours and learning preferences. I aimed to design something that appealed to both enthusiasts and casual learners, ensuring accessibility for users with little prior knowledge.
+
+Researched NASA’s NEO API to identify suitable endpoints for live asteroid data.
+
+Compared visualisation methods across existing astronomy apps and websites.
+
+Analysed user interaction trends to determine which visuals sustained engagement.
+
+Defined usability goals centred on simplicity, immersion, and learning value.
+
+2. Ideation & Concept Creation
+During the ideation stage, I explored multiple approaches to displaying asteroid data — including dashboards, 2D infographics, and animated charts. However, these formats didn’t effectively capture the dynamic and spatial nature of asteroids. After sketching and experimenting, I decided to pursue a 3D visualisation approach using Three.js, where users could freely explore space and interact with real asteroid data. To refine the concept, I created low-fidelity sketches outlining how users would navigate the interface, access information, and view asteroid metrics. I also planned how the data would connect to the visual environment — deciding to use floating UI panels to display key information without obstructing the 3D view.
+
+Developed multiple visual layout sketches to explore possible user journeys.
+
+Tested several interface flows to find the right balance between simplicity and depth.
+
+Created a design strategy for integrating real-time data with 3D visual elements.
+
+Defined educational goals, ensuring the experience remained informative yet fun.
+
+2. Ideation & Concept Creation
+3. Design & Development
+The design and development phase focused on bringing the concept to life through a combination of visual design and technical implementation. Using Three.js, I built a 3D environment that dynamically renders asteroid models based on live NASA data. Each asteroid is plotted in a virtual space with accurate position and size data, while lighting and motion effects simulate depth and realism. The user interface was intentionally kept minimal to avoid overwhelming the scene. A collapsible side panel displays asteroid details — including name, distance, estimated diameter, and orbital velocity — all fetched directly from the API. This approach allowed users to explore asteroids visually while still having access to detailed scientific information when desired.
+
+Implemented 3D asteroid rendering and lighting with Three.js for realism.
+
+Integrated the NASA NEO API to fetch and map asteroid data dynamically.
+
+Designed a clean, responsive interface overlay for displaying object data.
+
+Optimised the application for smooth frame rates and mobile responsiveness.
+
+4. User Testing & Refinement
+Once the core system was functional, I conducted user testing sessions to evaluate usability, clarity, and engagement. Participants were asked to explore the 3D environment, locate specific asteroids, and interpret their data. Their feedback revealed valuable insights into navigation sensitivity, readability, and the balance between realism and performance. Based on this feedback, I refined the interface by improving the visibility of smaller asteroids, simplifying camera controls, and adjusting the data panel layout for quicker readability. I also reduced visual clutter by optimising lighting effects and adjusting object scale.
+
+Conducted user tests focusing on navigation, clarity, and visual appeal.
+
+Improved asteroid size contrast and text readability for smaller objects.
+
+Refined camera and zoom sensitivity for smoother control.
+
+Reduced performance lag by optimising object rendering and lighting effects.
+
+The Solution
+The final Asteroids Web Application transforms static scientific data into a dynamic, educational experience. Users can explore real asteroid data in a 3D space, gaining insight into size, speed, and distance in a way that’s both informative and visually engaging. The application successfully bridges the gap between science and accessibility, turning raw data into an interactive learning environment that sparks curiosity about space.
+
+1
+Users reported a clearer understanding of asteroid scale and motion.
+
+2
+Engagement time increased compared to traditional data tables and charts.
+
+3
+Visual clarity and simplicity encouraged longer exploration sessions.
+
+4
+Feedback highlighted the project’s educational value and smooth performance.
+
+Technical Highlights
+Tech Stack
+Adobe XD
+HTML
+CSS
+Javascript
+Three.js
+Bootstrap
+Key Highlights
+Three.js integration for real-time 3D rendering of asteroids and environments.
+
+JPL Small-Body NEO API used to retrieve and map accurate asteroid data dynamically.
+
+Custom camera and orbit controls for smooth, intuitive navigation.
+
+Optimised rendering pipeline ensuring performance across desktop and mobile devices for dashboard.
+
+### AI Interactive Chatbot
+
+AI Chatbot Interactive Portfolio
+Portfolio featuring an AI chatbot trained on my project data, capable of answering any questions you have about my work.
+
+About This Project
+This portfolio features an AI-powered chatbot designed to enhance user interaction by providing intelligent, real-time responses about the projects showcased. Trained on data from my own work, the chatbot can answer questions about each project, offering detailed explanations, insights, and guidance tailored to the visitor’s inquiries. The integration of the AI chatbot transforms the portfolio from a static showcase into an interactive experience, making it easier for users to explore projects, understand design and development decisions, and gain a deeper appreciation for the work. By combining natural language processing with a user-friendly interface, the chatbot provides a seamless and engaging way to navigate the portfolio. This project demonstrates the potential of AI in improving accessibility and engagement in digital experiences. It highlights my focus on innovative solutions, user-centered design, and the integration of emerging technologies to create meaningful, interactive, and intelligent online experiences.
+
+Key Features
+•
+Interactive Chatbot – Answers questions about portfolio projects in real time.
+•
+Project-Specific Knowledge – Trained on data from my own projects for accurate responses.
+•
+Natural Language Processing – Understands and responds to user queries conversationally.
+•
+User-Friendly Interface – Seamlessly integrated into the portfolio for intuitive navigation.
+•
+Adaptive Responses – Learns from queries to provide increasingly relevant and helpful answers.

@@ -326,7 +326,7 @@
 
 
 import { useParams, useNavigate } from "react-router-dom";
-import { FiFileText, FiGithub, FiArrowLeft, FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiArrowLeft, FiExternalLink } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import Beams from './Beams';
 import Dock, { dockItemsOuter } from './Dock';
@@ -337,7 +337,6 @@ export default function ProjectContent() {
   const { id } = useParams(); // get project ID from URL
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [showTLDR, setShowTLDR] = useState(false);
   const navigate = useNavigate();
 
  useEffect(() => {
@@ -376,11 +375,6 @@ export default function ProjectContent() {
       setLoading(false);
     });
 }, [id]);
-
-  const handleTLDR = () => {
-    setShowTLDR(true);
-    setTimeout(() => setShowTLDR(false), 4000);
-  };
 
   const handleBackClick = () => {
     navigate("/"); // go to home
@@ -435,24 +429,12 @@ export default function ProjectContent() {
 
       {/* Foreground content */}
       <div className="container py-5 project-content position-relative" style={{ zIndex: 1 }}>
-        {/* TL;DR Alert */}
-        {showTLDR && (
-          <div className="alert alert-info alert-dismissible fade show shadow-sm" role="alert">
-            <strong>{project.title}:</strong> {project.description}
-            <button type="button" className="btn-close" onClick={() => setShowTLDR(false)}></button>
-          </div>
-        )}
 
         {/* Header */}
         <div className="d-flex justify-content-between align-items-center mb-4">
           <button className="btn btn-glass d-flex align-items-center px-3 py-2 text-white rounded-3" onClick={handleBackClick}>
             <FiArrowLeft className="me-2" />
             Back to Projects
-          </button>
-
-          <button className="btn btn-glass d-flex align-items-center px-3 py-2 text-white rounded-3" onClick={handleTLDR}>
-            <FiFileText className="me-2" />
-            TL;DR
           </button>
         </div>
 

@@ -335,7 +335,7 @@ const sendMessage = async (message) => {
           
           {messages.length === 0 && (
             <div className="text-center text-black-75 mt-5">
-              Ask my AI companion anything about <br /> my projects below. <br /> <br /> When you send a message below, it will prompt you to sign<br/> into the engine for my AI (Puter.com).
+              Ask my AI companion anything about <br /> my projects below. <br /> <br /> When you send a message below, it will prompt you to sign<br/> into the engine for my AI (Puter.com). This will automatically sign in if your google account is logged in.
               <br/><br/>This is fully open source and free to use. <br /> <br /> Enjoy!
             </div>
           )}

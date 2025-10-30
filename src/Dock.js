@@ -101,7 +101,7 @@ export default function Dock({
       } else if (item.href.includes('/#')) {
         // Navigate to home page with hash
         navigate(item.href.split('#')[0]);
-        setTimeout(() => scrollToSection(`#${item.href.split('#')[1]}`), 100); // delay for render
+        setTimeout(() => scrollToSection(`#${item.href.split('#')[1]}`), 400); // delay for render
       } else {
         navigate(item.href); // normal page navigation
       }
