@@ -128,11 +128,11 @@ export default function AboutSection() {
               <h5 className="fw-semibold mb-3">By The Numbers</h5>
               <div className="row text-center">
                 <div className="col">
-                  <div className="fw-bold fs-3 gradient-text">18+</div>
+                  <div className="fw-bold fs-3 gradient-text">25+</div>
                   <div className="small text-secondary">Projects</div>
                 </div>
                 <div className="col">
-                  <div className="fw-bold fs-3 gradient-text">1+</div>
+                  <div className="fw-bold fs-3 gradient-text">2+</div>
                   <div className="small text-secondary">Years</div>
                 </div>
                 <div className="col">
